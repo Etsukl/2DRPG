@@ -1,16 +1,12 @@
 {
-    "name": "Characters",
+    "name": "Managers",
     "rootNamespace": "",
-    "references": [
-        "GUID:c98df045e928ac2488183dc8e31c7a28"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
-    "precompiledReferences": [
-        "System.Text.Json.dll"
-    ],
+    "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],

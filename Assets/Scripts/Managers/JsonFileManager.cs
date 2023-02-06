@@ -5,14 +5,14 @@ using System.IO;
 
 namespace Managers
 {
-    public class JsonFileManager
+    public static class JsonFileManager
     {
-        public void SaveJson(string fileName,string json)
+        public static void SaveJson(string fileName,string json)
         {
             string path = Path.Combine(Application.streamingAssetsPath,fileName+"json");
             File.WriteAllText(path,json);
         }
-        public string LoadData<T>(string fileName) where T : class
+        public static string LoadJson<T>(string fileName) where T : class
         {
             string path = Path.Combine(Application.streamingAssetsPath,fileName+"json");
             string json;

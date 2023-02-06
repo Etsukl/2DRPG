@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using System.Text.Json;
+using Managers;
 
 namespace Characters
 {
@@ -36,11 +37,7 @@ namespace Characters
                 {
                     Debug.LogError("Error: json file is empty.");
                 }
-                PlayerPrefs.SetString("CharacterData",json);
-                if(!PlayerPrefs.HasKey("CharacterData"))
-                {
-                    Debug.LogError("Key does not exist.");
-                }
+                JsonFileManager.SaveJson("CharacterData",json);
             }
             catch(System.ArgumentNullException e)
             {
@@ -54,7 +51,7 @@ namespace Characters
 
         public List<CharacterData> Load()
         {
-            string json = PlayerPrefs.GetString("CharacterData");
+            string json = JsonFileManager.LoadJson<CharacterData>("CharacterData");
             return JsonSerializer.Deserialize<List<CharacterData>>(json);
         }
         #endregion
