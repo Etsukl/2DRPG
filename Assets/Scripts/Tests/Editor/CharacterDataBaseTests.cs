@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using NUnit.Framework;
 using Characters;
+using Managers;
 using System.Text.Json;
+
 namespace Editor
 {
     [TestFixture]
@@ -105,7 +107,7 @@ namespace Editor
             characterDataBase.AddCharacter(character1);
             characterDataBase.Save();
 
-            var savedJson = PlayerPrefs.GetString("CharacterData");
+            var savedJson = JsonFileManager.LoadJson<CharacterDataBase.CharacterData>("CharacterData");
             Assert.IsFalse(string.IsNullOrEmpty(savedJson));
 
             var savedCharacters = JsonSerializer.Deserialize<List<CharacterDataBase.CharacterData>>(savedJson);
@@ -119,7 +121,7 @@ namespace Editor
             characterDataBase.AddCharacter(character1,character2,character3,character4,character5);
             characterDataBase.Save();
 
-            var savedJson = PlayerPrefs.GetString("CharacterData");
+            var savedJson = JsonFileManager.LoadJson<CharacterDataBase.CharacterData>("CharacterData");
             var savedCharacters = JsonSerializer.Deserialize<List<CharacterDataBase.CharacterData>>(savedJson);
 
             Assert.AreEqual(characterDataBase.Characters.Count, savedCharacters.Count);
@@ -147,7 +149,7 @@ namespace Editor
             characterDataBase.Characters[0].Name = expectedCharacterName;
             characterDataBase.Save();
 
-            var savedJson = PlayerPrefs.GetString("CharacterData");
+            var savedJson = JsonFileManager.LoadJson<CharacterDataBase.CharacterData>("CharacterData");
             var savedCharacters = JsonSerializer.Deserialize<List<CharacterDataBase.CharacterData>>(savedJson);
 
             Assert.AreEqual(expectedCharacterName, savedCharacters[0].Name);
