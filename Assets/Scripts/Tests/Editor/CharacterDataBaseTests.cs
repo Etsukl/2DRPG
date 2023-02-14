@@ -4,15 +4,19 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using NUnit.Framework;
 using Characters;
-using Managers;
+using IOManagerAssembly;
 using System.Text.Json;
+using System.IO;
 
 namespace Editor
 {
     [TestFixture]
     public class CharacterDataBaseTests
     {
-        private GameObject mock;
+        private string path;
+        private IDataIO dataIO;
+        private string filename = "CharacterData";
+        private IDataSerialization<List<CharacterDataBase.CharacterData>> dataSerialization;
         private CharacterDataBase characterDataBase;
         private CharacterDataBase.CharacterData character1;
         private CharacterDataBase.CharacterData character2;
@@ -22,8 +26,11 @@ namespace Editor
         [SetUp]
         public void SetUp()
         {
-            mock = new GameObject();
-            characterDataBase = mock.AddComponent<CharacterDataBase>();
+            path = Application.streamingAssetsPath;
+            dataIO = new FileIO(filename,".json");
+            dataSerialization = new JSONSerialization<List<CharacterDataBase.CharacterData>>();
+
+            characterDataBase = new CharacterDataBase(dataIO, dataSerialization);
 
             character1 = new CharacterDataBase.CharacterData
             {
@@ -82,18 +89,30 @@ namespace Editor
         }
         
 
+        /// <summary>
+        /// CharacterDataBase.AddCharacter()が正常に動作しているかのテスト。
+        /// １人追加したときに１人追加される。
+        /// </summary>
         [Test]
         public void AddCharacter_AddingOneCharacter_ShouldAddOneCharacterToList()
         {
             characterDataBase.AddCharacter(character1);
             Assert.AreEqual(1,characterDataBase.Characters.Count);
         }
+        /// <summary>
+        /// CharacterDataBase.AddCharacter()が正常に動作しているかのテスト。
+        /// 複数のキャラクターをまとめて追加出来るかどうか。
+        /// </summary>
         [Test]
         public void AddCharacter_AddingMultipleCharacters_ShoudAddMultipleCharactersToList()
         {
             characterDataBase.AddCharacter(character1,character2);
             Assert.AreEqual(2,characterDataBase.Characters.Count);
         }
+        /// <summary>
+        /// CharacterDataBase.AddCharacter()が正常に動作しているかのテスト。
+        /// 重複を許さずに、データベースにキャラクターを追加できるかどうか。
+        /// </summary>
         [Test]
         public void TestAddUniqueCharacter_AddingDupulicateCharacter_ShouldAddOnlyCharacterToList()
         {
@@ -101,13 +120,17 @@ namespace Editor
             characterDataBase.AddCharacter(character1);
             Assert.AreEqual(1,characterDataBase.Characters.Count);
         }
+        /// <summary>
+        /// 
+        /// </summary>
         [Test]
-        public void Save_Called_ShouldSaveCharacterToPlayerPrefs()
+        public void Save_Called_ShouldSaveCharacter()
         {
             characterDataBase.AddCharacter(character1);
             characterDataBase.Save();
 
-            var savedJson = JsonFileManager.LoadJson<CharacterDataBase.CharacterData>("CharacterData");
+            string savedJson = dataIO.ReadData();
+
             Assert.IsFalse(string.IsNullOrEmpty(savedJson));
 
             var savedCharacters = JsonSerializer.Deserialize<List<CharacterDataBase.CharacterData>>(savedJson);
@@ -121,7 +144,7 @@ namespace Editor
             characterDataBase.AddCharacter(character1,character2,character3,character4,character5);
             characterDataBase.Save();
 
-            var savedJson = JsonFileManager.LoadJson<CharacterDataBase.CharacterData>("CharacterData");
+            string savedJson = dataIO.ReadData();
             var savedCharacters = JsonSerializer.Deserialize<List<CharacterDataBase.CharacterData>>(savedJson);
 
             Assert.AreEqual(characterDataBase.Characters.Count, savedCharacters.Count);
@@ -149,7 +172,8 @@ namespace Editor
             characterDataBase.Characters[0].Name = expectedCharacterName;
             characterDataBase.Save();
 
-            var savedJson = JsonFileManager.LoadJson<CharacterDataBase.CharacterData>("CharacterData");
+            string savedJson = dataIO.ReadData();
+
             var savedCharacters = JsonSerializer.Deserialize<List<CharacterDataBase.CharacterData>>(savedJson);
 
             Assert.AreEqual(expectedCharacterName, savedCharacters[0].Name);

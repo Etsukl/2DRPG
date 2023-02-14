@@ -7,14 +7,15 @@ namespace Managers
 {
     public static class JsonFileManager
     {
+        const string json_extension = ".json";
         public static void SaveJson(string fileName,string json)
         {
-            string path = Path.Combine(Application.streamingAssetsPath,fileName+"json");
+            string path = Path.Combine(Application.streamingAssetsPath,fileName+json_extension);
             File.WriteAllText(path,json);
         }
         public static string LoadJson<T>(string fileName) where T : class
         {
-            string path = Path.Combine(Application.streamingAssetsPath,fileName+"json");
+            string path = Path.Combine(Application.streamingAssetsPath,fileName+json_extension);
             string json;
             if(!File.Exists(path))
             {

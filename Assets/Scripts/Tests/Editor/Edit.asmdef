@@ -5,7 +5,8 @@
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
         "Characters",
-        "Managers"
+        "Managers",
+        "IOManagerAssembly"
     ],
     "includePlatforms": [
         "Editor"

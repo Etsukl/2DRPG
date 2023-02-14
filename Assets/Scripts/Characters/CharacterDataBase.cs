@@ -3,17 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using System.Text.Json;
-using Managers;
+using IOManagerAssembly;
 
 namespace Characters
 {
-    public class CharacterDataBase : MonoBehaviour
+    public class CharacterDataBase
     {
+        private IOManagerAssembly.IDataIO dataIO;
+        private IOManagerAssembly.IDataSerialization<List<CharacterData>> serialization;
+        public CharacterDataBase(IDataIO dataIO, IDataSerialization<List<CharacterData>> serialization)
+        {
+            this.dataIO = dataIO;
+            this.serialization = serialization;
+        }
+
+
         #region プロパティ
         public List<CharacterData> Characters { get; set; } = new List<CharacterData>();
         #endregion
 
         #region メソッド
+        public void AddCharacter(CharacterData _character)
+        {
+            if(!Characters.Contains(_character))Characters.Add(_character);
+        }
+        public void AddCharacter(CharacterData _character1,CharacterData _character2)
+        {
+            this.AddCharacter(_character1);
+            this.AddCharacter(_character2);
+        }
+
+        public void AddCharacter(CharacterData _character1,CharacterData _character2,
+            CharacterData _character3,CharacterData _character4)
+        {
+            this.AddCharacter(_character1,_character2);
+            this.AddCharacter(_character3,_character4);
+        }
         public void AddCharacter(params CharacterData[] _characters)
         {
             foreach(var character in _characters)
@@ -28,32 +53,22 @@ namespace Characters
         {
             Characters.Remove(_character);
         }
+
+        /*　セーブ/ロードがデータベースに必要だろうか。
+         *　A.多分必要？各データのセーブ/ロードを行う際は、ここを参照してすべてのデータを書き込む。
+         *　ただし、変更があったファイルだけを書き換えたい。*/
         public void Save()
         {
-            try
-            {
-                string json = JsonSerializer.Serialize(Characters);
-                if(string.IsNullOrEmpty(json.Trim('[',']')))
-                {
-                    Debug.LogError("Error: json file is empty.");
-                }
-                JsonFileManager.SaveJson("CharacterData",json);
-            }
-            catch(System.ArgumentNullException e)
-            {
-                Debug.LogError("Error: Characters list is null. Exception message: "+e.Message);
-            }
-            catch(System.Text.Json.JsonException e)
-            {
-                Debug.LogError("Error: Failed to Serialize Object. Exception Message: "+e.Message);
-            }
+            string serialData = serialization.Serialize(Characters);
+            dataIO.WriteData(serialData);
         }
 
         public List<CharacterData> Load()
         {
-            string json = JsonFileManager.LoadJson<CharacterData>("CharacterData");
-            return JsonSerializer.Deserialize<List<CharacterData>>(json);
+            string serialData = dataIO.ReadData();
+            return serialization.Deserialize(serialData);
         }
+        
         #endregion
 
         // JSONセーブデータを読み込むためのクラス
