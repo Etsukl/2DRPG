@@ -1,0 +1,14 @@
+### YamlMime:TableOfContent
+- uid: IOManagerAssembly
+  name: IOManagerAssembly
+  items:
+  - uid: IOManagerAssembly.FileIO
+    name: FileIO
+  - uid: IOManagerAssembly.IDataIO
+    name: IDataIO
+  - uid: IOManagerAssembly.IDataSerialization`1
+    name: IDataSerialization<T>
+    name.vb: IDataSerialization(Of T)
+  - uid: IOManagerAssembly.JSONSerialization`1
+    name: JSONSerialization<T>
+    name.vb: JSONSerialization(Of T)

@@ -19,7 +19,6 @@ namespace IOManagerAssembly
     public class FileIO:IDataIO
     {
         private string _path;
-        public string CurPath => _path;
         public FileIO(string fileName)
             : this(fileName, Path.GetExtension(fileName)) { }
         public FileIO(string fileName,string extension)
@@ -96,7 +95,6 @@ namespace IOManagerAssembly
 
         public void WriteData(string data)
         {
-            Debug.Log(Path.GetFullPath(CurPath));
             try
             {
                 using (var sw = new StreamWriter(_path)) 

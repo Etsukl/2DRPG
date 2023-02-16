@@ -1,0 +1,80 @@
+### YamlMime:ManagedReference
+items:
+- uid: IOManagerAssembly
+  commentId: N:IOManagerAssembly
+  id: IOManagerAssembly
+  children:
+  - IOManagerAssembly.FileIO
+  - IOManagerAssembly.IDataIO
+  - IOManagerAssembly.IDataSerialization`1
+  - IOManagerAssembly.JSONSerialization`1
+  langs:
+  - csharp
+  - vb
+  name: IOManagerAssembly
+  nameWithType: IOManagerAssembly
+  fullName: IOManagerAssembly
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: IOManagerAssembly.FileIO
+  commentId: T:IOManagerAssembly.FileIO
+  name: FileIO
+  nameWithType: FileIO
+  fullName: IOManagerAssembly.FileIO
+- uid: IOManagerAssembly.IDataIO
+  commentId: T:IOManagerAssembly.IDataIO
+  parent: IOManagerAssembly
+  name: IDataIO
+  nameWithType: IDataIO
+  fullName: IOManagerAssembly.IDataIO
+- uid: IOManagerAssembly.IDataSerialization`1
+  commentId: T:IOManagerAssembly.IDataSerialization`1
+  name: IDataSerialization<T>
+  nameWithType: IDataSerialization<T>
+  fullName: IOManagerAssembly.IDataSerialization<T>
+  nameWithType.vb: IDataSerialization(Of T)
+  fullName.vb: IOManagerAssembly.IDataSerialization(Of T)
+  name.vb: IDataSerialization(Of T)
+  spec.csharp:
+  - uid: IOManagerAssembly.IDataSerialization`1
+    name: IDataSerialization
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: IOManagerAssembly.IDataSerialization`1
+    name: IDataSerialization
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: IOManagerAssembly.JSONSerialization`1
+  commentId: T:IOManagerAssembly.JSONSerialization`1
+  name: JSONSerialization<T>
+  nameWithType: JSONSerialization<T>
+  fullName: IOManagerAssembly.JSONSerialization<T>
+  nameWithType.vb: JSONSerialization(Of T)
+  fullName.vb: IOManagerAssembly.JSONSerialization(Of T)
+  name.vb: JSONSerialization(Of T)
+  spec.csharp:
+  - uid: IOManagerAssembly.JSONSerialization`1
+    name: JSONSerialization
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: IOManagerAssembly.JSONSerialization`1
+    name: JSONSerialization
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: IOManagerAssembly
+  commentId: N:IOManagerAssembly
+  name: IOManagerAssembly
+  nameWithType: IOManagerAssembly
+  fullName: IOManagerAssembly

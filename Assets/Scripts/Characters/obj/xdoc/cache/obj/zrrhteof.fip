@@ -1,0 +1,2106 @@
+id: cs.temp.dll
+language: CSharp
+name:
+  Default: cs.temp.dll
+qualifiedName:
+  Default: cs.temp.dll
+type: Assembly
+items:
+- id: IOManagerAssembly
+  commentId: N:IOManagerAssembly
+  language: CSharp
+  name:
+    CSharp: IOManagerAssembly
+    VB: IOManagerAssembly
+  nameWithType:
+    CSharp: IOManagerAssembly
+    VB: IOManagerAssembly
+  qualifiedName:
+    CSharp: IOManagerAssembly
+    VB: IOManagerAssembly
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+  items:
+  - id: IOManagerAssembly.FileIO
+    commentId: T:IOManagerAssembly.FileIO
+    language: CSharp
+    name:
+      CSharp: FileIO
+      VB: FileIO
+    nameWithType:
+      CSharp: FileIO
+      VB: FileIO
+    qualifiedName:
+      CSharp: IOManagerAssembly.FileIO
+      VB: IOManagerAssembly.FileIO
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: IOManagerAssembly
+    source:
+      id: FileIO
+      path: ''
+      startLine: 200
+    syntax:
+      content:
+        CSharp: 'public class FileIO : IDataIO'
+        VB: Public Class FileIO Implements IDataIO
+    inheritance:
+    - System.Object
+    implements:
+    - IOManagerAssembly.IDataIO
+    items:
+    - id: IOManagerAssembly.FileIO.#ctor(System.String)
+      commentId: M:IOManagerAssembly.FileIO.#ctor(System.String)
+      language: CSharp
+      name:
+        CSharp: FileIO(string)
+        VB: New(String)
+      nameWithType:
+        CSharp: FileIO.FileIO(string)
+        VB: FileIO.New(String)
+      qualifiedName:
+        CSharp: IOManagerAssembly.FileIO.FileIO(string)
+        VB: IOManagerAssembly.FileIO.New(String)
+      type: Constructor
+      assemblies:
+      - cs.temp.dll
+      namespace: IOManagerAssembly
+      source:
+        id: .ctor
+        path: ''
+        startLine: 203
+      syntax:
+        content:
+          CSharp: public FileIO(string fileName)
+          VB: Public Sub New(fileName As String)
+        parameters:
+        - id: fileName
+          type: System.String
+      overload: IOManagerAssembly.FileIO.#ctor*
+    - id: IOManagerAssembly.FileIO.#ctor(System.String,System.String)
+      commentId: M:IOManagerAssembly.FileIO.#ctor(System.String,System.String)
+      language: CSharp
+      name:
+        CSharp: FileIO(string, string)
+        VB: New(String, String)
+      nameWithType:
+        CSharp: FileIO.FileIO(string, string)
+        VB: FileIO.New(String, String)
+      qualifiedName:
+        CSharp: IOManagerAssembly.FileIO.FileIO(string, string)
+        VB: IOManagerAssembly.FileIO.New(String, String)
+      type: Constructor
+      assemblies:
+      - cs.temp.dll
+      namespace: IOManagerAssembly
+      source:
+        id: .ctor
+        path: ''
+        startLine: 205
+      syntax:
+        content:
+          CSharp: public FileIO(string fileName, string extension)
+          VB: Public Sub New(fileName As String, extension As String)
+        parameters:
+        - id: fileName
+          type: System.String
+        - id: extension
+          type: System.String
+      overload: IOManagerAssembly.FileIO.#ctor*
+    - id: IOManagerAssembly.FileIO.ReadData
+      commentId: M:IOManagerAssembly.FileIO.ReadData
+      language: CSharp
+      name:
+        CSharp: ReadData()
+        VB: ReadData()
+      nameWithType:
+        CSharp: FileIO.ReadData()
+        VB: FileIO.ReadData()
+      qualifiedName:
+        CSharp: IOManagerAssembly.FileIO.ReadData()
+        VB: IOManagerAssembly.FileIO.ReadData()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: IOManagerAssembly
+      source:
+        id: ReadData
+        path: ''
+        startLine: 235
+      syntax:
+        content:
+          CSharp: public string ReadData()
+          VB: Public Function ReadData() As String
+        return:
+          type: System.String
+      overload: IOManagerAssembly.FileIO.ReadData*
+      implements:
+      - IOManagerAssembly.IDataIO.ReadData
+    - id: IOManagerAssembly.FileIO.WriteData(System.String)
+      commentId: M:IOManagerAssembly.FileIO.WriteData(System.String)
+      language: CSharp
+      name:
+        CSharp: WriteData(string)
+        VB: WriteData(String)
+      nameWithType:
+        CSharp: FileIO.WriteData(string)
+        VB: FileIO.WriteData(String)
+      qualifiedName:
+        CSharp: IOManagerAssembly.FileIO.WriteData(string)
+        VB: IOManagerAssembly.FileIO.WriteData(String)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: IOManagerAssembly
+      source:
+        id: WriteData
+        path: ''
+        startLine: 277
+      syntax:
+        content:
+          CSharp: public void WriteData(string data)
+          VB: Public Sub WriteData(data As String)
+        parameters:
+        - id: data
+          type: System.String
+      overload: IOManagerAssembly.FileIO.WriteData*
+      implements:
+      - IOManagerAssembly.IDataIO.WriteData(System.String)
+  - id: IOManagerAssembly.IDataIO
+    commentId: T:IOManagerAssembly.IDataIO
+    language: CSharp
+    name:
+      CSharp: IDataIO
+      VB: IDataIO
+    nameWithType:
+      CSharp: IDataIO
+      VB: IDataIO
+    qualifiedName:
+      CSharp: IOManagerAssembly.IDataIO
+      VB: IOManagerAssembly.IDataIO
+    type: Interface
+    assemblies:
+    - cs.temp.dll
+    namespace: IOManagerAssembly
+    source:
+      id: IDataIO
+      path: ''
+      startLine: 320
+    syntax:
+      content:
+        CSharp: public interface IDataIO
+        VB: Public Interface IDataIO
+    items:
+    - id: IOManagerAssembly.IDataIO.ReadData
+      commentId: M:IOManagerAssembly.IDataIO.ReadData
+      language: CSharp
+      name:
+        CSharp: ReadData()
+        VB: ReadData()
+      nameWithType:
+        CSharp: IDataIO.ReadData()
+        VB: IDataIO.ReadData()
+      qualifiedName:
+        CSharp: IOManagerAssembly.IDataIO.ReadData()
+        VB: IOManagerAssembly.IDataIO.ReadData()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: IOManagerAssembly
+      source:
+        id: ReadData
+        path: ''
+        startLine: 322
+      syntax:
+        content:
+          CSharp: string ReadData()
+          VB: Function ReadData() As String
+        return:
+          type: System.String
+      overload: IOManagerAssembly.IDataIO.ReadData*
+    - id: IOManagerAssembly.IDataIO.WriteData(System.String)
+      commentId: M:IOManagerAssembly.IDataIO.WriteData(System.String)
+      language: CSharp
+      name:
+        CSharp: WriteData(string)
+        VB: WriteData(String)
+      nameWithType:
+        CSharp: IDataIO.WriteData(string)
+        VB: IDataIO.WriteData(String)
+      qualifiedName:
+        CSharp: IOManagerAssembly.IDataIO.WriteData(string)
+        VB: IOManagerAssembly.IDataIO.WriteData(String)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: IOManagerAssembly
+      source:
+        id: WriteData
+        path: ''
+        startLine: 323
+      syntax:
+        content:
+          CSharp: void WriteData(string data)
+          VB: Sub WriteData(data As String)
+        parameters:
+        - id: data
+          type: System.String
+      overload: IOManagerAssembly.IDataIO.WriteData*
+  - id: IOManagerAssembly.IDataSerialization`1
+    commentId: T:IOManagerAssembly.IDataSerialization`1
+    language: CSharp
+    name:
+      CSharp: IDataSerialization<T>
+      VB: IDataSerialization(Of T)
+    nameWithType:
+      CSharp: IDataSerialization<T>
+      VB: IDataSerialization(Of T)
+    qualifiedName:
+      CSharp: IOManagerAssembly.IDataSerialization<T>
+      VB: IOManagerAssembly.IDataSerialization(Of T)
+    type: Interface
+    assemblies:
+    - cs.temp.dll
+    namespace: IOManagerAssembly
+    source:
+      id: IDataSerialization
+      path: ''
+      startLine: 338
+    summary: "\n�e��f�[�^���V���A���C�Y�����邱�Ƃ��o����N���X\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public interface IDataSerialization<T> where T : class'
+        VB: Public Interface IDataSerialization(Of T As Class)
+      typeParameters:
+      - id: T
+    items:
+    - id: IOManagerAssembly.IDataSerialization`1.Extension
+      commentId: P:IOManagerAssembly.IDataSerialization`1.Extension
+      language: CSharp
+      name:
+        CSharp: Extension
+        VB: Extension
+      nameWithType:
+        CSharp: IDataSerialization<T>.Extension
+        VB: IDataSerialization(Of T).Extension
+      qualifiedName:
+        CSharp: IOManagerAssembly.IDataSerialization<T>.Extension
+        VB: IOManagerAssembly.IDataSerialization(Of T).Extension
+      type: Property
+      assemblies:
+      - cs.temp.dll
+      namespace: IOManagerAssembly
+      source:
+        id: Extension
+        path: ''
+        startLine: 340
+      syntax:
+        content:
+          CSharp: string Extension { get; }
+          VB: ReadOnly Property Extension As String
+        parameters: []
+        return:
+          type: System.String
+      overload: IOManagerAssembly.IDataSerialization`1.Extension*
+    - id: IOManagerAssembly.IDataSerialization`1.Serialize(`0,System.Boolean)
+      commentId: M:IOManagerAssembly.IDataSerialization`1.Serialize(`0,System.Boolean)
+      language: CSharp
+      name:
+        CSharp: Serialize(T, bool)
+        VB: Serialize(T, Boolean)
+      nameWithType:
+        CSharp: IDataSerialization<T>.Serialize(T, bool)
+        VB: IDataSerialization(Of T).Serialize(T, Boolean)
+      qualifiedName:
+        CSharp: IOManagerAssembly.IDataSerialization<T>.Serialize(T, bool)
+        VB: IOManagerAssembly.IDataSerialization(Of T).Serialize(T, Boolean)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: IOManagerAssembly
+      source:
+        id: Serialize
+        path: ''
+        startLine: 341
+      syntax:
+        content:
+          CSharp: string Serialize(T value, bool formattingEnabled = false)
+          VB: Function Serialize(value As T, formattingEnabled As Boolean = False) As String
+        parameters:
+        - id: value
+          type: '{T}'
+        - id: formattingEnabled
+          type: System.Boolean
+        return:
+          type: System.String
+      overload: IOManagerAssembly.IDataSerialization`1.Serialize*
+    - id: IOManagerAssembly.IDataSerialization`1.Deserialize(System.String)
+      commentId: M:IOManagerAssembly.IDataSerialization`1.Deserialize(System.String)
+      language: CSharp
+      name:
+        CSharp: Deserialize(string)
+        VB: Deserialize(String)
+      nameWithType:
+        CSharp: IDataSerialization<T>.Deserialize(string)
+        VB: IDataSerialization(Of T).Deserialize(String)
+      qualifiedName:
+        CSharp: IOManagerAssembly.IDataSerialization<T>.Deserialize(string)
+        VB: IOManagerAssembly.IDataSerialization(Of T).Deserialize(String)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: IOManagerAssembly
+      source:
+        id: Deserialize
+        path: ''
+        startLine: 343
+      syntax:
+        content:
+          CSharp: T Deserialize(string serialData)
+          VB: Function Deserialize(serialData As String) As T
+        parameters:
+        - id: serialData
+          type: System.String
+        return:
+          type: '{T}'
+      overload: IOManagerAssembly.IDataSerialization`1.Deserialize*
+  - id: IOManagerAssembly.JSONSerialization`1
+    commentId: T:IOManagerAssembly.JSONSerialization`1
+    language: CSharp
+    name:
+      CSharp: JSONSerialization<T>
+      VB: JSONSerialization(Of T)
+    nameWithType:
+      CSharp: JSONSerialization<T>
+      VB: JSONSerialization(Of T)
+    qualifiedName:
+      CSharp: IOManagerAssembly.JSONSerialization<T>
+      VB: IOManagerAssembly.JSONSerialization(Of T)
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: IOManagerAssembly
+    source:
+      id: JSONSerialization
+      path: ''
+      startLine: 360
+    summary: "\nJSONデータに変換するためのシリアライザーのラッパー\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public class JSONSerialization<T> : IDataSerialization<T> where T : class'
+        VB: Public Class JSONSerialization(Of T As Class) Implements IDataSerialization(Of T)
+      typeParameters:
+      - id: T
+        description: ''
+    inheritance:
+    - System.Object
+    implements:
+    - IOManagerAssembly.IDataSerialization{{T}}
+    items:
+    - id: IOManagerAssembly.JSONSerialization`1.Extension
+      commentId: P:IOManagerAssembly.JSONSerialization`1.Extension
+      language: CSharp
+      name:
+        CSharp: Extension
+        VB: Extension
+      nameWithType:
+        CSharp: JSONSerialization<T>.Extension
+        VB: JSONSerialization(Of T).Extension
+      qualifiedName:
+        CSharp: IOManagerAssembly.JSONSerialization<T>.Extension
+        VB: IOManagerAssembly.JSONSerialization(Of T).Extension
+      type: Property
+      assemblies:
+      - cs.temp.dll
+      namespace: IOManagerAssembly
+      source:
+        id: Extension
+        path: ''
+        startLine: 363
+      syntax:
+        content:
+          CSharp: public string Extension { get; }
+          VB: Public ReadOnly Property Extension As String
+        parameters: []
+        return:
+          type: System.String
+      overload: IOManagerAssembly.JSONSerialization`1.Extension*
+      implements:
+      - IOManagerAssembly.IDataSerialization{{T}}.Extension
+    - id: IOManagerAssembly.JSONSerialization`1.Serialize(`0,System.Boolean)
+      commentId: M:IOManagerAssembly.JSONSerialization`1.Serialize(`0,System.Boolean)
+      language: CSharp
+      name:
+        CSharp: Serialize(T, bool)
+        VB: Serialize(T, Boolean)
+      nameWithType:
+        CSharp: JSONSerialization<T>.Serialize(T, bool)
+        VB: JSONSerialization(Of T).Serialize(T, Boolean)
+      qualifiedName:
+        CSharp: IOManagerAssembly.JSONSerialization<T>.Serialize(T, bool)
+        VB: IOManagerAssembly.JSONSerialization(Of T).Serialize(T, Boolean)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: IOManagerAssembly
+      source:
+        id: Serialize
+        path: ''
+        startLine: 370
+      summary: "\nシリアライザー\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string Serialize(T value, bool formattingEnabled = false)
+          VB: Public Function Serialize(value As T, formattingEnabled As Boolean = False) As String
+        parameters:
+        - id: value
+          type: '{T}'
+          description: シリアル化したい任意のデータ
+        - id: formattingEnabled
+          type: System.Boolean
+          description: データを整形するかどうか。デフォルトはfalse
+        return:
+          type: System.String
+          description: ''
+      overload: IOManagerAssembly.JSONSerialization`1.Serialize*
+      implements:
+      - IOManagerAssembly.IDataSerialization{{T}}.Serialize({T},System.Boolean)
+    - id: IOManagerAssembly.JSONSerialization`1.Deserialize(System.String)
+      commentId: M:IOManagerAssembly.JSONSerialization`1.Deserialize(System.String)
+      language: CSharp
+      name:
+        CSharp: Deserialize(string)
+        VB: Deserialize(String)
+      nameWithType:
+        CSharp: JSONSerialization<T>.Deserialize(string)
+        VB: JSONSerialization(Of T).Deserialize(String)
+      qualifiedName:
+        CSharp: IOManagerAssembly.JSONSerialization<T>.Deserialize(string)
+        VB: IOManagerAssembly.JSONSerialization(Of T).Deserialize(String)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: IOManagerAssembly
+      source:
+        id: Deserialize
+        path: ''
+        startLine: 384
+      syntax:
+        content:
+          CSharp: public T Deserialize(string serialData)
+          VB: Public Function Deserialize(serialData As String) As T
+        parameters:
+        - id: serialData
+          type: System.String
+        return:
+          type: '{T}'
+      overload: IOManagerAssembly.JSONSerialization`1.Deserialize*
+      implements:
+      - IOManagerAssembly.IDataSerialization{{T}}.Deserialize(System.String)
+references:
+  System:
+    name:
+      CSharp:
+      - id: System
+        name: System
+        isExternal: true
+      VB:
+      - id: System
+        name: System
+        isExternal: true
+    nameWithType:
+      CSharp:
+      - id: System
+        name: System
+        isExternal: true
+      VB:
+      - id: System
+        name: System
+        isExternal: true
+    qualifiedName:
+      CSharp:
+      - id: System
+        name: System
+        isExternal: true
+      VB:
+      - id: System
+        name: System
+        isExternal: true
+    isDefinition: true
+    commentId: N:System
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        isExternal: true
+    nameWithType:
+      CSharp:
+      - id: System.Object
+        name: object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        isExternal: true
+    qualifiedName:
+      CSharp:
+      - id: System.Object
+        name: object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  IOManagerAssembly:
+    name:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+    isDefinition: true
+    commentId: N:IOManagerAssembly
+  IOManagerAssembly.IDataIO:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataIO
+        name: IDataIO
+      VB:
+      - id: IOManagerAssembly.IDataIO
+        name: IDataIO
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataIO
+        name: IDataIO
+      VB:
+      - id: IOManagerAssembly.IDataIO
+        name: IDataIO
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataIO
+        name: IDataIO
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataIO
+        name: IDataIO
+    isDefinition: true
+    parent: IOManagerAssembly
+    commentId: T:IOManagerAssembly.IDataIO
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: string
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        isExternal: true
+    nameWithType:
+      CSharp:
+      - id: System.String
+        name: string
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        isExternal: true
+    qualifiedName:
+      CSharp:
+      - id: System.String
+        name: string
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.String
+  IOManagerAssembly.FileIO.#ctor*:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.FileIO.#ctor*
+        name: FileIO
+      VB:
+      - name: New
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.FileIO*
+        name: FileIO
+      - name: .
+      - id: IOManagerAssembly.FileIO.#ctor*
+        name: FileIO
+      VB:
+      - id: IOManagerAssembly.FileIO*
+        name: FileIO
+      - name: .
+      - name: New
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.FileIO*
+        name: FileIO
+      - name: .
+      - id: IOManagerAssembly.FileIO.#ctor*
+        name: FileIO
+      VB:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.FileIO*
+        name: FileIO
+      - name: .
+      - name: New
+    isDefinition: true
+    commentId: Overload:IOManagerAssembly.FileIO.#ctor
+  IOManagerAssembly.FileIO.ReadData*:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.FileIO.ReadData*
+        name: ReadData
+      VB:
+      - id: IOManagerAssembly.FileIO.ReadData*
+        name: ReadData
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.FileIO*
+        name: FileIO
+      - name: .
+      - id: IOManagerAssembly.FileIO.ReadData*
+        name: ReadData
+      VB:
+      - id: IOManagerAssembly.FileIO*
+        name: FileIO
+      - name: .
+      - id: IOManagerAssembly.FileIO.ReadData*
+        name: ReadData
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.FileIO*
+        name: FileIO
+      - name: .
+      - id: IOManagerAssembly.FileIO.ReadData*
+        name: ReadData
+      VB:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.FileIO*
+        name: FileIO
+      - name: .
+      - id: IOManagerAssembly.FileIO.ReadData*
+        name: ReadData
+    isDefinition: true
+    commentId: Overload:IOManagerAssembly.FileIO.ReadData
+  IOManagerAssembly.IDataIO.ReadData:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataIO.ReadData
+        name: ReadData
+      - name: (
+      - name: )
+      VB:
+      - id: IOManagerAssembly.IDataIO.ReadData
+        name: ReadData
+      - name: (
+      - name: )
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataIO
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.ReadData
+        name: ReadData
+      - name: (
+      - name: )
+      VB:
+      - id: IOManagerAssembly.IDataIO
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.ReadData
+        name: ReadData
+      - name: (
+      - name: )
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataIO
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.ReadData
+        name: ReadData
+      - name: (
+      - name: )
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataIO
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.ReadData
+        name: ReadData
+      - name: (
+      - name: )
+    isDefinition: true
+    parent: IOManagerAssembly.IDataIO
+    commentId: M:IOManagerAssembly.IDataIO.ReadData
+  IOManagerAssembly.FileIO.WriteData*:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.FileIO.WriteData*
+        name: WriteData
+      VB:
+      - id: IOManagerAssembly.FileIO.WriteData*
+        name: WriteData
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.FileIO*
+        name: FileIO
+      - name: .
+      - id: IOManagerAssembly.FileIO.WriteData*
+        name: WriteData
+      VB:
+      - id: IOManagerAssembly.FileIO*
+        name: FileIO
+      - name: .
+      - id: IOManagerAssembly.FileIO.WriteData*
+        name: WriteData
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.FileIO*
+        name: FileIO
+      - name: .
+      - id: IOManagerAssembly.FileIO.WriteData*
+        name: WriteData
+      VB:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.FileIO*
+        name: FileIO
+      - name: .
+      - id: IOManagerAssembly.FileIO.WriteData*
+        name: WriteData
+    isDefinition: true
+    commentId: Overload:IOManagerAssembly.FileIO.WriteData
+  IOManagerAssembly.IDataIO.WriteData(System.String):
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataIO.WriteData(System.String)
+        name: WriteData
+      - name: (
+      - id: System.String
+        name: string
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly.IDataIO.WriteData(System.String)
+        name: WriteData
+      - name: (
+      - id: System.String
+        name: String
+        isExternal: true
+      - name: )
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataIO
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.WriteData(System.String)
+        name: WriteData
+      - name: (
+      - id: System.String
+        name: string
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly.IDataIO
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.WriteData(System.String)
+        name: WriteData
+      - name: (
+      - id: System.String
+        name: String
+        isExternal: true
+      - name: )
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataIO
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.WriteData(System.String)
+        name: WriteData
+      - name: (
+      - id: System.String
+        name: string
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataIO
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.WriteData(System.String)
+        name: WriteData
+      - name: (
+      - id: System.String
+        name: String
+        isExternal: true
+      - name: )
+    isDefinition: true
+    parent: IOManagerAssembly.IDataIO
+    commentId: M:IOManagerAssembly.IDataIO.WriteData(System.String)
+  IOManagerAssembly.FileIO:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.FileIO
+        name: FileIO
+      VB:
+      - id: IOManagerAssembly.FileIO
+        name: FileIO
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.FileIO
+        name: FileIO
+      VB:
+      - id: IOManagerAssembly.FileIO
+        name: FileIO
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.FileIO
+        name: FileIO
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.FileIO
+        name: FileIO
+    isDefinition: true
+    commentId: T:IOManagerAssembly.FileIO
+  IOManagerAssembly.IDataIO.ReadData*:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataIO.ReadData*
+        name: ReadData
+      VB:
+      - id: IOManagerAssembly.IDataIO.ReadData*
+        name: ReadData
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataIO*
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.ReadData*
+        name: ReadData
+      VB:
+      - id: IOManagerAssembly.IDataIO*
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.ReadData*
+        name: ReadData
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataIO*
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.ReadData*
+        name: ReadData
+      VB:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataIO*
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.ReadData*
+        name: ReadData
+    isDefinition: true
+    commentId: Overload:IOManagerAssembly.IDataIO.ReadData
+  IOManagerAssembly.IDataIO.WriteData*:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataIO.WriteData*
+        name: WriteData
+      VB:
+      - id: IOManagerAssembly.IDataIO.WriteData*
+        name: WriteData
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataIO*
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.WriteData*
+        name: WriteData
+      VB:
+      - id: IOManagerAssembly.IDataIO*
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.WriteData*
+        name: WriteData
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataIO*
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.WriteData*
+        name: WriteData
+      VB:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataIO*
+        name: IDataIO
+      - name: .
+      - id: IOManagerAssembly.IDataIO.WriteData*
+        name: WriteData
+    isDefinition: true
+    commentId: Overload:IOManagerAssembly.IDataIO.WriteData
+  IOManagerAssembly.IDataSerialization`1.Extension*:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1.Extension*
+        name: Extension
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1.Extension*
+        name: Extension
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1*
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Extension*
+        name: Extension
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1*
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Extension*
+        name: Extension
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1*
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Extension*
+        name: Extension
+      VB:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1*
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Extension*
+        name: Extension
+    isDefinition: true
+    commentId: Overload:IOManagerAssembly.IDataSerialization`1.Extension
+  T:
+    name:
+      CSharp:
+      - name: T
+      VB:
+      - name: T
+    nameWithType:
+      CSharp:
+      - name: T
+      VB:
+      - name: T
+    qualifiedName:
+      CSharp:
+      - name: T
+      VB:
+      - name: T
+    isDefinition: true
+  '{T}':
+    name:
+      CSharp:
+      - name: T
+      VB:
+      - name: T
+    nameWithType:
+      CSharp:
+      - name: T
+      VB:
+      - name: T
+    qualifiedName:
+      CSharp:
+      - name: T
+      VB:
+      - name: T
+    isDefinition: false
+    definition: T
+    commentId: '!:T'
+  System.Boolean:
+    name:
+      CSharp:
+      - id: System.Boolean
+        name: bool
+        isExternal: true
+      VB:
+      - id: System.Boolean
+        name: Boolean
+        isExternal: true
+    nameWithType:
+      CSharp:
+      - id: System.Boolean
+        name: bool
+        isExternal: true
+      VB:
+      - id: System.Boolean
+        name: Boolean
+        isExternal: true
+    qualifiedName:
+      CSharp:
+      - id: System.Boolean
+        name: bool
+        isExternal: true
+      VB:
+      - id: System.Boolean
+        name: Boolean
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Boolean
+  IOManagerAssembly.IDataSerialization`1.Serialize*:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1.Serialize*
+        name: Serialize
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1.Serialize*
+        name: Serialize
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1*
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Serialize*
+        name: Serialize
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1*
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Serialize*
+        name: Serialize
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1*
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Serialize*
+        name: Serialize
+      VB:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1*
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Serialize*
+        name: Serialize
+    isDefinition: true
+    commentId: Overload:IOManagerAssembly.IDataSerialization`1.Serialize
+  IOManagerAssembly.IDataSerialization`1.Deserialize*:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1.Deserialize*
+        name: Deserialize
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1.Deserialize*
+        name: Deserialize
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1*
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Deserialize*
+        name: Deserialize
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1*
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Deserialize*
+        name: Deserialize
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1*
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Deserialize*
+        name: Deserialize
+      VB:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1*
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Deserialize*
+        name: Deserialize
+    isDefinition: true
+    commentId: Overload:IOManagerAssembly.IDataSerialization`1.Deserialize
+  IOManagerAssembly.IDataSerialization`1:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+    isDefinition: true
+    commentId: T:IOManagerAssembly.IDataSerialization`1
+  IOManagerAssembly.IDataSerialization{{T}}:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+    isDefinition: false
+    definition: IOManagerAssembly.IDataSerialization`1
+    parent: IOManagerAssembly
+    commentId: T:IOManagerAssembly.IDataSerialization{`0}
+  IOManagerAssembly.JSONSerialization`1.Extension*:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.JSONSerialization`1.Extension*
+        name: Extension
+      VB:
+      - id: IOManagerAssembly.JSONSerialization`1.Extension*
+        name: Extension
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.JSONSerialization`1*
+        name: JSONSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1.Extension*
+        name: Extension
+      VB:
+      - id: IOManagerAssembly.JSONSerialization`1*
+        name: JSONSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1.Extension*
+        name: Extension
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1*
+        name: JSONSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1.Extension*
+        name: Extension
+      VB:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1*
+        name: JSONSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1.Extension*
+        name: Extension
+    isDefinition: true
+    commentId: Overload:IOManagerAssembly.JSONSerialization`1.Extension
+  IOManagerAssembly.IDataSerialization`1.Extension:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1.Extension
+        name: Extension
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1.Extension
+        name: Extension
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Extension
+        name: Extension
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Extension
+        name: Extension
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Extension
+        name: Extension
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Extension
+        name: Extension
+    isDefinition: true
+    commentId: P:IOManagerAssembly.IDataSerialization`1.Extension
+  IOManagerAssembly.IDataSerialization{{T}}.Extension:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization{`0}.Extension
+        name: Extension
+      VB:
+      - id: IOManagerAssembly.IDataSerialization{`0}.Extension
+        name: Extension
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization{`0}.Extension
+        name: Extension
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization{`0}.Extension
+        name: Extension
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization{`0}.Extension
+        name: Extension
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization{`0}.Extension
+        name: Extension
+    isDefinition: false
+    definition: IOManagerAssembly.IDataSerialization`1.Extension
+    parent: IOManagerAssembly.IDataSerialization{{T}}
+    commentId: P:IOManagerAssembly.IDataSerialization{`0}.Extension
+  IOManagerAssembly.JSONSerialization`1.Serialize*:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.JSONSerialization`1.Serialize*
+        name: Serialize
+      VB:
+      - id: IOManagerAssembly.JSONSerialization`1.Serialize*
+        name: Serialize
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.JSONSerialization`1*
+        name: JSONSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1.Serialize*
+        name: Serialize
+      VB:
+      - id: IOManagerAssembly.JSONSerialization`1*
+        name: JSONSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1.Serialize*
+        name: Serialize
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1*
+        name: JSONSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1.Serialize*
+        name: Serialize
+      VB:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1*
+        name: JSONSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1.Serialize*
+        name: Serialize
+    isDefinition: true
+    commentId: Overload:IOManagerAssembly.JSONSerialization`1.Serialize
+  IOManagerAssembly.IDataSerialization`1.Serialize(`0,System.Boolean):
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1.Serialize(`0,System.Boolean)
+        name: Serialize
+      - name: (
+      - name: T
+      - name: ','
+      - name: " "
+      - id: System.Boolean
+        name: bool
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1.Serialize(`0,System.Boolean)
+        name: Serialize
+      - name: (
+      - name: T
+      - name: ','
+      - name: " "
+      - id: System.Boolean
+        name: Boolean
+        isExternal: true
+      - name: )
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Serialize(`0,System.Boolean)
+        name: Serialize
+      - name: (
+      - name: T
+      - name: ','
+      - name: " "
+      - id: System.Boolean
+        name: bool
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Serialize(`0,System.Boolean)
+        name: Serialize
+      - name: (
+      - name: T
+      - name: ','
+      - name: " "
+      - id: System.Boolean
+        name: Boolean
+        isExternal: true
+      - name: )
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Serialize(`0,System.Boolean)
+        name: Serialize
+      - name: (
+      - name: T
+      - name: ','
+      - name: " "
+      - id: System.Boolean
+        name: bool
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Serialize(`0,System.Boolean)
+        name: Serialize
+      - name: (
+      - name: T
+      - name: ','
+      - name: " "
+      - id: System.Boolean
+        name: Boolean
+        isExternal: true
+      - name: )
+    isDefinition: true
+    commentId: M:IOManagerAssembly.IDataSerialization`1.Serialize(`0,System.Boolean)
+  IOManagerAssembly.IDataSerialization{{T}}.Serialize({T},System.Boolean):
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization{`0}.Serialize(`0,System.Boolean)
+        name: Serialize
+      - name: (
+      - name: T
+      - name: ','
+      - name: " "
+      - id: System.Boolean
+        name: bool
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly.IDataSerialization{`0}.Serialize(`0,System.Boolean)
+        name: Serialize
+      - name: (
+      - name: T
+      - name: ','
+      - name: " "
+      - id: System.Boolean
+        name: Boolean
+        isExternal: true
+      - name: )
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization{`0}.Serialize(`0,System.Boolean)
+        name: Serialize
+      - name: (
+      - name: T
+      - name: ','
+      - name: " "
+      - id: System.Boolean
+        name: bool
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization{`0}.Serialize(`0,System.Boolean)
+        name: Serialize
+      - name: (
+      - name: T
+      - name: ','
+      - name: " "
+      - id: System.Boolean
+        name: Boolean
+        isExternal: true
+      - name: )
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization{`0}.Serialize(`0,System.Boolean)
+        name: Serialize
+      - name: (
+      - name: T
+      - name: ','
+      - name: " "
+      - id: System.Boolean
+        name: bool
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization{`0}.Serialize(`0,System.Boolean)
+        name: Serialize
+      - name: (
+      - name: T
+      - name: ','
+      - name: " "
+      - id: System.Boolean
+        name: Boolean
+        isExternal: true
+      - name: )
+    isDefinition: false
+    definition: IOManagerAssembly.IDataSerialization`1.Serialize(`0,System.Boolean)
+    parent: IOManagerAssembly.IDataSerialization{{T}}
+    commentId: M:IOManagerAssembly.IDataSerialization{`0}.Serialize(`0,System.Boolean)
+  IOManagerAssembly.JSONSerialization`1.Deserialize*:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.JSONSerialization`1.Deserialize*
+        name: Deserialize
+      VB:
+      - id: IOManagerAssembly.JSONSerialization`1.Deserialize*
+        name: Deserialize
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.JSONSerialization`1*
+        name: JSONSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1.Deserialize*
+        name: Deserialize
+      VB:
+      - id: IOManagerAssembly.JSONSerialization`1*
+        name: JSONSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1.Deserialize*
+        name: Deserialize
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1*
+        name: JSONSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1.Deserialize*
+        name: Deserialize
+      VB:
+      - id: IOManagerAssembly*
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1*
+        name: JSONSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1.Deserialize*
+        name: Deserialize
+    isDefinition: true
+    commentId: Overload:IOManagerAssembly.JSONSerialization`1.Deserialize
+  IOManagerAssembly.IDataSerialization`1.Deserialize(System.String):
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1.Deserialize(System.String)
+        name: Deserialize
+      - name: (
+      - id: System.String
+        name: string
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1.Deserialize(System.String)
+        name: Deserialize
+      - name: (
+      - id: System.String
+        name: String
+        isExternal: true
+      - name: )
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Deserialize(System.String)
+        name: Deserialize
+      - name: (
+      - id: System.String
+        name: string
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Deserialize(System.String)
+        name: Deserialize
+      - name: (
+      - id: System.String
+        name: String
+        isExternal: true
+      - name: )
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Deserialize(System.String)
+        name: Deserialize
+      - name: (
+      - id: System.String
+        name: string
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1.Deserialize(System.String)
+        name: Deserialize
+      - name: (
+      - id: System.String
+        name: String
+        isExternal: true
+      - name: )
+    isDefinition: true
+    commentId: M:IOManagerAssembly.IDataSerialization`1.Deserialize(System.String)
+  IOManagerAssembly.IDataSerialization{{T}}.Deserialize(System.String):
+    name:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization{`0}.Deserialize(System.String)
+        name: Deserialize
+      - name: (
+      - id: System.String
+        name: string
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly.IDataSerialization{`0}.Deserialize(System.String)
+        name: Deserialize
+      - name: (
+      - id: System.String
+        name: String
+        isExternal: true
+      - name: )
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization{`0}.Deserialize(System.String)
+        name: Deserialize
+      - name: (
+      - id: System.String
+        name: string
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization{`0}.Deserialize(System.String)
+        name: Deserialize
+      - name: (
+      - id: System.String
+        name: String
+        isExternal: true
+      - name: )
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization{`0}.Deserialize(System.String)
+        name: Deserialize
+      - name: (
+      - id: System.String
+        name: string
+        isExternal: true
+      - name: )
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization`1
+        name: IDataSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+      - name: .
+      - id: IOManagerAssembly.IDataSerialization{`0}.Deserialize(System.String)
+        name: Deserialize
+      - name: (
+      - id: System.String
+        name: String
+        isExternal: true
+      - name: )
+    isDefinition: false
+    definition: IOManagerAssembly.IDataSerialization`1.Deserialize(System.String)
+    parent: IOManagerAssembly.IDataSerialization{{T}}
+    commentId: M:IOManagerAssembly.IDataSerialization{`0}.Deserialize(System.String)
+  IOManagerAssembly.JSONSerialization`1:
+    name:
+      CSharp:
+      - id: IOManagerAssembly.JSONSerialization`1
+        name: JSONSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      VB:
+      - id: IOManagerAssembly.JSONSerialization`1
+        name: JSONSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+    nameWithType:
+      CSharp:
+      - id: IOManagerAssembly.JSONSerialization`1
+        name: JSONSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      VB:
+      - id: IOManagerAssembly.JSONSerialization`1
+        name: JSONSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+    qualifiedName:
+      CSharp:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1
+        name: JSONSerialization
+      - name: <
+      - name: T
+      - name: '>'
+      VB:
+      - id: IOManagerAssembly
+        name: IOManagerAssembly
+      - name: .
+      - id: IOManagerAssembly.JSONSerialization`1
+        name: JSONSerialization
+      - name: (
+      - name: Of
+      - name: " "
+      - name: T
+      - name: )
+    isDefinition: true
+    commentId: T:IOManagerAssembly.JSONSerialization`1

@@ -7,10 +7,20 @@ using System.Runtime.Serialization;
 
 namespace IOManagerAssembly
 {
-    public class JSONSerialization<T> : IDataSerialization<T>
+    /// <summary>
+    /// JSONデータに変換するためのシリアライザーのラッパー
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public class JSONSerialization<T> : IDataSerialization<T> where T : class
     {
         private const string extension = ".json";
         public string Extension=>extension;
+        /// <summary>
+        /// シリアライザー
+        /// </summary>
+        /// <param name="value">シリアル化したい任意のデータ</param>
+        /// <param name="formattingEnabled">データを整形するかどうか。デフォルトはfalse</param>
+        /// <returns></returns>
         public string Serialize(T value, bool formattingEnabled = false)
         {
             try

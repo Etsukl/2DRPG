@@ -5,6 +5,9 @@ using System.IO;
 
 namespace Managers
 {
+    /*
+     * Žg‚í‚È‚¢
+     */
     public static class JsonFileManager
     {
         const string json_extension = ".json";

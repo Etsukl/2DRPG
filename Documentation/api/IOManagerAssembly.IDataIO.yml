@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: IOManagerAssembly.IDataIO
+  commentId: T:IOManagerAssembly.IDataIO
+  id: IDataIO
+  parent: IOManagerAssembly
+  children:
+  - IOManagerAssembly.IDataIO.ReadData
+  - IOManagerAssembly.IDataIO.WriteData(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IDataIO
+  nameWithType: IDataIO
+  fullName: IOManagerAssembly.IDataIO
+  type: Interface
+  source:
+    id: IDataIO
+    path: ''
+    startLine: 320
+  assemblies:
+  - cs.temp.dll
+  namespace: IOManagerAssembly
+  syntax:
+    content: public interface IDataIO
+    content.vb: Public Interface IDataIO
+- uid: IOManagerAssembly.IDataIO.ReadData
+  commentId: M:IOManagerAssembly.IDataIO.ReadData
+  id: ReadData
+  parent: IOManagerAssembly.IDataIO
+  langs:
+  - csharp
+  - vb
+  name: ReadData()
+  nameWithType: IDataIO.ReadData()
+  fullName: IOManagerAssembly.IDataIO.ReadData()
+  type: Method
+  source:
+    id: ReadData
+    path: ''
+    startLine: 322
+  assemblies:
+  - cs.temp.dll
+  namespace: IOManagerAssembly
+  syntax:
+    content: string ReadData()
+    return:
+      type: System.String
+    content.vb: Function ReadData() As String
+  overload: IOManagerAssembly.IDataIO.ReadData*
+- uid: IOManagerAssembly.IDataIO.WriteData(System.String)
+  commentId: M:IOManagerAssembly.IDataIO.WriteData(System.String)
+  id: WriteData(System.String)
+  parent: IOManagerAssembly.IDataIO
+  langs:
+  - csharp
+  - vb
+  name: WriteData(string)
+  nameWithType: IDataIO.WriteData(string)
+  fullName: IOManagerAssembly.IDataIO.WriteData(string)
+  type: Method
+  source:
+    id: WriteData
+    path: ''
+    startLine: 323
+  assemblies:
+  - cs.temp.dll
+  namespace: IOManagerAssembly
+  syntax:
+    content: void WriteData(string data)
+    parameters:
+    - id: data
+      type: System.String
+    content.vb: Sub WriteData(data As String)
+  overload: IOManagerAssembly.IDataIO.WriteData*
+  nameWithType.vb: IDataIO.WriteData(String)
+  fullName.vb: IOManagerAssembly.IDataIO.WriteData(String)
+  name.vb: WriteData(String)
+references:
+- uid: IOManagerAssembly
+  commentId: N:IOManagerAssembly
+  name: IOManagerAssembly
+  nameWithType: IOManagerAssembly
+  fullName: IOManagerAssembly
+- uid: IOManagerAssembly.IDataIO.ReadData*
+  commentId: Overload:IOManagerAssembly.IDataIO.ReadData
+  name: ReadData
+  nameWithType: IDataIO.ReadData
+  fullName: IOManagerAssembly.IDataIO.ReadData
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IOManagerAssembly.IDataIO.WriteData*
+  commentId: Overload:IOManagerAssembly.IDataIO.WriteData
+  name: WriteData
+  nameWithType: IDataIO.WriteData
+  fullName: IOManagerAssembly.IDataIO.WriteData

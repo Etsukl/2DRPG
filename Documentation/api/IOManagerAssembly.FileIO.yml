@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: IOManagerAssembly.FileIO
+  commentId: T:IOManagerAssembly.FileIO
+  id: FileIO
+  parent: IOManagerAssembly
+  children:
+  - IOManagerAssembly.FileIO.#ctor(System.String,System.String)
+  - IOManagerAssembly.FileIO.#ctor(System.String)
+  - IOManagerAssembly.FileIO.ReadData
+  - IOManagerAssembly.FileIO.WriteData(System.String)
+  langs:
+  - csharp
+  - vb
+  name: FileIO
+  nameWithType: FileIO
+  fullName: IOManagerAssembly.FileIO
+  type: Class
+  source:
+    id: FileIO
+    path: ''
+    startLine: 200
+  assemblies:
+  - cs.temp.dll
+  namespace: IOManagerAssembly
+  syntax:
+    content: 'public class FileIO : IDataIO'
+    content.vb: Public Class FileIO Implements IDataIO
+  inheritance:
+  - System.Object
+  implements:
+  - IOManagerAssembly.IDataIO
+- uid: IOManagerAssembly.FileIO.#ctor(System.String)
+  commentId: M:IOManagerAssembly.FileIO.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: IOManagerAssembly.FileIO
+  langs:
+  - csharp
+  - vb
+  name: FileIO(string)
+  nameWithType: FileIO.FileIO(string)
+  fullName: IOManagerAssembly.FileIO.FileIO(string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 203
+  assemblies:
+  - cs.temp.dll
+  namespace: IOManagerAssembly
+  syntax:
+    content: public FileIO(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+    content.vb: Public Sub New(fileName As String)
+  overload: IOManagerAssembly.FileIO.#ctor*
+  nameWithType.vb: FileIO.New(String)
+  fullName.vb: IOManagerAssembly.FileIO.New(String)
+  name.vb: New(String)
+- uid: IOManagerAssembly.FileIO.#ctor(System.String,System.String)
+  commentId: M:IOManagerAssembly.FileIO.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: IOManagerAssembly.FileIO
+  langs:
+  - csharp
+  - vb
+  name: FileIO(string, string)
+  nameWithType: FileIO.FileIO(string, string)
+  fullName: IOManagerAssembly.FileIO.FileIO(string, string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 205
+  assemblies:
+  - cs.temp.dll
+  namespace: IOManagerAssembly
+  syntax:
+    content: public FileIO(string fileName, string extension)
+    parameters:
+    - id: fileName
+      type: System.String
+    - id: extension
+      type: System.String
+    content.vb: Public Sub New(fileName As String, extension As String)
+  overload: IOManagerAssembly.FileIO.#ctor*
+  nameWithType.vb: FileIO.New(String, String)
+  fullName.vb: IOManagerAssembly.FileIO.New(String, String)
+  name.vb: New(String, String)
+- uid: IOManagerAssembly.FileIO.ReadData
+  commentId: M:IOManagerAssembly.FileIO.ReadData
+  id: ReadData
+  parent: IOManagerAssembly.FileIO
+  langs:
+  - csharp
+  - vb
+  name: ReadData()
+  nameWithType: FileIO.ReadData()
+  fullName: IOManagerAssembly.FileIO.ReadData()
+  type: Method
+  source:
+    id: ReadData
+    path: ''
+    startLine: 235
+  assemblies:
+  - cs.temp.dll
+  namespace: IOManagerAssembly
+  syntax:
+    content: public string ReadData()
+    return:
+      type: System.String
+    content.vb: Public Function ReadData() As String
+  overload: IOManagerAssembly.FileIO.ReadData*
+  implements:
+  - IOManagerAssembly.IDataIO.ReadData
+- uid: IOManagerAssembly.FileIO.WriteData(System.String)
+  commentId: M:IOManagerAssembly.FileIO.WriteData(System.String)
+  id: WriteData(System.String)
+  parent: IOManagerAssembly.FileIO
+  langs:
+  - csharp
+  - vb
+  name: WriteData(string)
+  nameWithType: FileIO.WriteData(string)
+  fullName: IOManagerAssembly.FileIO.WriteData(string)
+  type: Method
+  source:
+    id: WriteData
+    path: ''
+    startLine: 277
+  assemblies:
+  - cs.temp.dll
+  namespace: IOManagerAssembly
+  syntax:
+    content: public void WriteData(string data)
+    parameters:
+    - id: data
+      type: System.String
+    content.vb: Public Sub WriteData(data As String)
+  overload: IOManagerAssembly.FileIO.WriteData*
+  implements:
+  - IOManagerAssembly.IDataIO.WriteData(System.String)
+  nameWithType.vb: FileIO.WriteData(String)
+  fullName.vb: IOManagerAssembly.FileIO.WriteData(String)
+  name.vb: WriteData(String)
+references:
+- uid: IOManagerAssembly
+  commentId: N:IOManagerAssembly
+  name: IOManagerAssembly
+  nameWithType: IOManagerAssembly
+  fullName: IOManagerAssembly
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: IOManagerAssembly.IDataIO
+  commentId: T:IOManagerAssembly.IDataIO
+  parent: IOManagerAssembly
+  name: IDataIO
+  nameWithType: IDataIO
+  fullName: IOManagerAssembly.IDataIO
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IOManagerAssembly.FileIO.#ctor*
+  commentId: Overload:IOManagerAssembly.FileIO.#ctor
+  name: FileIO
+  nameWithType: FileIO.FileIO
+  fullName: IOManagerAssembly.FileIO.FileIO
+  nameWithType.vb: FileIO.New
+  fullName.vb: IOManagerAssembly.FileIO.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: IOManagerAssembly.FileIO.ReadData*
+  commentId: Overload:IOManagerAssembly.FileIO.ReadData
+  name: ReadData
+  nameWithType: FileIO.ReadData
+  fullName: IOManagerAssembly.FileIO.ReadData
+- uid: IOManagerAssembly.IDataIO.ReadData
+  commentId: M:IOManagerAssembly.IDataIO.ReadData
+  parent: IOManagerAssembly.IDataIO
+  name: ReadData()
+  nameWithType: IDataIO.ReadData()
+  fullName: IOManagerAssembly.IDataIO.ReadData()
+  spec.csharp:
+  - uid: IOManagerAssembly.IDataIO.ReadData
+    name: ReadData
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: IOManagerAssembly.IDataIO.ReadData
+    name: ReadData
+  - name: (
+  - name: )
+- uid: IOManagerAssembly.FileIO.WriteData*
+  commentId: Overload:IOManagerAssembly.FileIO.WriteData
+  name: WriteData
+  nameWithType: FileIO.WriteData
+  fullName: IOManagerAssembly.FileIO.WriteData
+- uid: IOManagerAssembly.IDataIO.WriteData(System.String)
+  commentId: M:IOManagerAssembly.IDataIO.WriteData(System.String)
+  parent: IOManagerAssembly.IDataIO
+  isExternal: true
+  name: WriteData(string)
+  nameWithType: IDataIO.WriteData(string)
+  fullName: IOManagerAssembly.IDataIO.WriteData(string)
+  nameWithType.vb: IDataIO.WriteData(String)
+  fullName.vb: IOManagerAssembly.IDataIO.WriteData(String)
+  name.vb: WriteData(String)
+  spec.csharp:
+  - uid: IOManagerAssembly.IDataIO.WriteData(System.String)
+    name: WriteData
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: IOManagerAssembly.IDataIO.WriteData(System.String)
+    name: WriteData
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )

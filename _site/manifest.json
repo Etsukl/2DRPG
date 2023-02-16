@@ -1,0 +1,236 @@
+{
+  "sitemap": {
+    "fileOptions": {
+      "api/*": {
+        "baseUrl": "https://etsukl.github.io/2DRPG/",
+        "changefreq": "daily"
+      }
+    },
+    "baseUrl": "https://etsukl.github.io/2DRPG/",
+    "changefreq": "weekly"
+  },
+  "homepages": [],
+  "source_base_path": "C:/Users/otonade/Documents/Unity/2DRPG/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IOManagerAssembly.FileIO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IOManagerAssembly.FileIO.html",
+          "hash": "43Yz/O5+RxawvEKBut+rmBCHeG6Zgt2wqqI9/zOZNWo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IOManagerAssembly.IDataIO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IOManagerAssembly.IDataIO.html",
+          "hash": "MDa96/jBiy6rgVfO3rqpf2fC9MlUPKucA8IvLLC/crA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IOManagerAssembly.IDataSerialization-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IOManagerAssembly.IDataSerialization-1.html",
+          "hash": "Hp4XhOq4GDek1c2eUo6yB59FEag235IJz4uYd66+UQ8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IOManagerAssembly.JSONSerialization-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IOManagerAssembly.JSONSerialization-1.html",
+          "hash": "fkjmMdGUoAPykLbmnFPvmbrQotmGGn/Xjyynb3MPEJE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IOManagerAssembly.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IOManagerAssembly.html",
+          "hash": "Ze/QrjYMo2DvAC5BTGdxNCEKfIqRHJarKh7exToX1Rw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "aM1DCTYxxDskMrMReGWYbW8t8S1MuJslouYrm6sPdsQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "fAq6VxwXaaiaMTCuc4h4DO9BNhCWzGI9745adLrbTbM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/coniunctis.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/coniunctis.html",
+          "hash": "AYbA1IE3nGH7unABdDW6p/iwEPiRq/wCTA/I/fiBT/c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/etiam.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/etiam.html",
+          "hash": "GuSsFm97kmn+mCQMu7UK65827xA/OYcdMJ0zz/Ig2GU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "Tcm9qlcDaO08ZALfJLz9pvYtwG3N+BgaEbYVUBYBa84="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ExampleManual.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ExampleManual.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ExampleScriptingApi.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ExampleScriptingApi.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "nLoutayaW87F4UawqhO/IO2OXtWwf3r6LmpZcP3gT0U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ConfigChanged"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 5,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

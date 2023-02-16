@@ -10,7 +10,7 @@ namespace IOManagerAssembly
     /// 各種データをシリアライズ化することが出来るクラス
     /// </summary>
 
-    public interface IDataSerialization<T>
+    public interface IDataSerialization<T> where T : class
     {
         public string Extension { get; }
         public string Serialize(T value, bool formattingEnabled = false);

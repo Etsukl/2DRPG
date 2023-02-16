@@ -1,0 +1,19 @@
+{
+  "IOManagerAssembly": "IOManagerAssembly.yml",
+  "IOManagerAssembly.FileIO": "IOManagerAssembly.FileIO.yml",
+  "IOManagerAssembly.FileIO.#ctor(System.String,System.String)": "IOManagerAssembly.FileIO.yml",
+  "IOManagerAssembly.FileIO.#ctor(System.String)": "IOManagerAssembly.FileIO.yml",
+  "IOManagerAssembly.FileIO.ReadData": "IOManagerAssembly.FileIO.yml",
+  "IOManagerAssembly.FileIO.WriteData(System.String)": "IOManagerAssembly.FileIO.yml",
+  "IOManagerAssembly.IDataIO": "IOManagerAssembly.IDataIO.yml",
+  "IOManagerAssembly.IDataIO.ReadData": "IOManagerAssembly.IDataIO.yml",
+  "IOManagerAssembly.IDataIO.WriteData(System.String)": "IOManagerAssembly.IDataIO.yml",
+  "IOManagerAssembly.IDataSerialization`1": "IOManagerAssembly.IDataSerialization-1.yml",
+  "IOManagerAssembly.IDataSerialization`1.Deserialize(System.String)": "IOManagerAssembly.IDataSerialization-1.yml",
+  "IOManagerAssembly.IDataSerialization`1.Extension": "IOManagerAssembly.IDataSerialization-1.yml",
+  "IOManagerAssembly.IDataSerialization`1.Serialize(`0,System.Boolean)": "IOManagerAssembly.IDataSerialization-1.yml",
+  "IOManagerAssembly.JSONSerialization`1": "IOManagerAssembly.JSONSerialization-1.yml",
+  "IOManagerAssembly.JSONSerialization`1.Deserialize(System.String)": "IOManagerAssembly.JSONSerialization-1.yml",
+  "IOManagerAssembly.JSONSerialization`1.Extension": "IOManagerAssembly.JSONSerialization-1.yml",
+  "IOManagerAssembly.JSONSerialization`1.Serialize(`0,System.Boolean)": "IOManagerAssembly.JSONSerialization-1.yml"
+}
