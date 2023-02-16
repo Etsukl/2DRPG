@@ -1,4 +1,4 @@
-name: Example documentation
+name: 2DRPG Documentation
 
 on:
   push:
@@ -50,6 +50,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.ACCESSTOKEN }}
           publish_branch: gh-pages
           publish_dir: _site
