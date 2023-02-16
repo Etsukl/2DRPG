@@ -3,7 +3,7 @@ name: Example documentation
 on:
   push:
     branches:
-      - main
+      - feature
 
 jobs:
   # Build the documentation
