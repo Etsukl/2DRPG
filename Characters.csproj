@@ -58,7 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Characters\CharacterDataBase.cs" />
     <Compile Include="Assets\Scripts\Characters\ItemClass.cs" />
-    <Compile Include="Assets\Scripts\Characters\CharacterClass.cs" />
+    <Compile Include="Assets\Scripts\Characters\CharacterData.cs" />
+    <Compile Include="Assets\Scripts\Characters\Job.cs" />
     <Compile Include="Assets\Scripts\Characters\ActionClass.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -691,10 +692,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Managers.csproj">
-      <Project>{0A84908D-E1E1-85DC-544C-6F5043BC24B9}</Project>
-      <Name>Managers</Name>
-    </ProjectReference>
     <ProjectReference Include="IOManagerAssembly.csproj">
       <Project>{9241021E-5C9B-4278-4F55-FC1B29465712}</Project>
       <Name>IOManagerAssembly</Name>

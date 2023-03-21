@@ -16,23 +16,23 @@ namespace Editor
         private string path;
         private IDataIO dataIO;
         private string filename = "CharacterData";
-        private IDataSerialization<List<CharacterDataBase.CharacterData>> dataSerialization;
+        private IDataSerialization<List<CharacterData>> dataSerialization;
         private CharacterDataBase characterDataBase;
-        private CharacterDataBase.CharacterData character1;
-        private CharacterDataBase.CharacterData character2;
-        private CharacterDataBase.CharacterData character3;
-        private CharacterDataBase.CharacterData character4;
-        private CharacterDataBase.CharacterData character5;
+        private CharacterData character1;
+        private CharacterData character2;
+        private CharacterData character3;
+        private CharacterData character4;
+        private CharacterData character5;
         [SetUp]
         public void SetUp()
         {
             path = Application.streamingAssetsPath;
             dataIO = new FileIO(filename,".json");
-            dataSerialization = new JSONSerialization<List<CharacterDataBase.CharacterData>>();
+            dataSerialization = new JSONSerialization<List<CharacterData>>();
 
             characterDataBase = new CharacterDataBase(dataIO, dataSerialization);
 
-            character1 = new CharacterDataBase.CharacterData
+            character1 = new CharacterData
             {
                 Name = "勇者",
                 Description = "世界を救うため旅する勇者",
@@ -43,7 +43,7 @@ namespace Editor
                 Speed = 8
             };
 
-            character2 = new CharacterDataBase.CharacterData
+            character2 = new CharacterData
             {
                 Name = "魔法使い",
                 Description = "魔法を使い魔物を倒す魔法使い",
@@ -53,7 +53,7 @@ namespace Editor
                 Defense = 3,
                 Speed = 6
             };
-            character3 = new CharacterDataBase.CharacterData
+            character3 = new CharacterData
             {
             Name = "サムライ",
             Description = "剣の使い手であり忠誠心があるサムライ",
@@ -64,7 +64,7 @@ namespace Editor
             Speed = 7
             };
 
-            character4 = new CharacterDataBase.CharacterData
+            character4 = new CharacterData
             {
             Name = "忍者",
             Description = "影から敵を倒す忍者",
@@ -75,7 +75,7 @@ namespace Editor
             Speed = 10
             };
 
-            character5 = new CharacterDataBase.CharacterData
+            character5 = new CharacterData
             {
             Name = "武者",
             Description = "格闘技で敵を倒す武者",
@@ -133,7 +133,7 @@ namespace Editor
 
             Assert.IsFalse(string.IsNullOrEmpty(savedJson));
 
-            var savedCharacters = JsonSerializer.Deserialize<List<CharacterDataBase.CharacterData>>(savedJson);
+            var savedCharacters = JsonSerializer.Deserialize<List<CharacterData>>(savedJson);
 
             Assert.AreEqual(characterDataBase.Characters.Count, savedCharacters.Count);
             Assert.AreEqual(characterDataBase.Characters[0].Name,savedCharacters[0].Name);            
@@ -145,7 +145,7 @@ namespace Editor
             characterDataBase.Save();
 
             string savedJson = dataIO.ReadData();
-            var savedCharacters = JsonSerializer.Deserialize<List<CharacterDataBase.CharacterData>>(savedJson);
+            var savedCharacters = JsonSerializer.Deserialize<List<CharacterData>>(savedJson);
 
             Assert.AreEqual(characterDataBase.Characters.Count, savedCharacters.Count);
             for(int i=0;i<savedCharacters.Count;i++)
@@ -174,7 +174,7 @@ namespace Editor
 
             string savedJson = dataIO.ReadData();
 
-            var savedCharacters = JsonSerializer.Deserialize<List<CharacterDataBase.CharacterData>>(savedJson);
+            var savedCharacters = JsonSerializer.Deserialize<List<CharacterData>>(savedJson);
 
             Assert.AreEqual(expectedCharacterName, savedCharacters[0].Name);
         }

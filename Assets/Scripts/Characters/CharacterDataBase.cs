@@ -7,10 +7,12 @@ using IOManagerAssembly;
 
 namespace Characters
 {
+
+
     public class CharacterDataBase
     {
-        private IOManagerAssembly.IDataIO dataIO;
-        private IOManagerAssembly.IDataSerialization<List<CharacterData>> serialization;
+        private IDataIO dataIO;
+        private IDataSerialization<List<CharacterData>> serialization;
         public CharacterDataBase(IDataIO dataIO, IDataSerialization<List<CharacterData>> serialization)
         {
             this.dataIO = dataIO;
@@ -70,18 +72,5 @@ namespace Characters
         }
         
         #endregion
-
-        // JSONセーブデータを読み込むためのクラス
-        [System.Serializable]
-        public class CharacterData
-        {
-            public string Name { get; set; }
-            public string Description { get; set; }
-            public int HP { get; set; }
-            public int MP { get; set; }
-            public int Strength { get; set; }
-            public int Defense { get; set; }
-            public int Speed { get; set; }
-        }
     }
 }

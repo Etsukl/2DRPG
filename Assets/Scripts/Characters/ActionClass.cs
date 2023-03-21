@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace Characters
 {
-    public class ActionClass : MonoBehaviour
+    [Serializable]
+    public class ActionClass
     {
         #region プロパティ
         public string Name { get; private set; }
